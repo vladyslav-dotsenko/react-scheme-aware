@@ -113,6 +113,9 @@ function App() {
 
       <footer className="app-footer">
         <p>Built with React, Monaco Editor, and JSON Schema.</p>
+        <p className="install-note">
+          Install: <code>npm install react-scheme-aware</code>
+        </p>
       </footer>
     </div>
   );

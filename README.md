@@ -11,6 +11,10 @@ A reusable React **JSON** editor with **JSON Schema** validation and code intell
 
 ## Demo
 
+**Live demo:** [https://vladyslav-dotsenko.github.io/react-scheme-aware/](https://vladyslav-dotsenko.github.io/react-scheme-aware/) (same as the package `homepage` in `package.json`).
+
+To run the demo locally:
+
 ```bash
 npm install
 npm run dev
@@ -21,10 +25,10 @@ Open the URL (e.g. `http://localhost:5173`). The demo includes example presets, 
 ## Install
 
 ```bash
-npm install react-scheme-aware react react-dom monaco-editor @monaco-editor/react
+npm install react-scheme-aware
 ```
 
-**Peer dependencies:** `react`, `react-dom`, `monaco-editor`, `@monaco-editor/react`.
+**Peer dependencies:** `react`, `react-dom`, `monaco-editor`, `@monaco-editor/react`. Install the package and its peers in your app to use the library (see [Usage](#usage)).
 
 ## Usage
 
