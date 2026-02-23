@@ -1,0 +1,11 @@
+# Demo and app source — only dist/ is published
+src/
+public/
+index.html
+build-gh-pages.sh
+
+# Config and tooling (not needed in the package)
+*.config.ts
+tsconfig*.json
+.eslintrc*
+node_modules/

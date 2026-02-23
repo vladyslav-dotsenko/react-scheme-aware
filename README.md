@@ -72,8 +72,9 @@ Summary:
 
 ## Building
 
-- **Library (npm):** `npm run build:lib` → output in `dist/`.
+- **Library (npm):** `npm run build:lib` → output in `dist/`. Only the library entry and `JsonSchemaEditor` components are built; demo code and app assets are excluded. The published package includes only `dist/` (and `README.md`).
 - **Demo app:** `npm run build`.
+- **Publishing:** Run `npm publish`; `prepublishOnly` runs `build:lib` so the tarball always contains an up-to-date `dist/`.
 
 ## License
 

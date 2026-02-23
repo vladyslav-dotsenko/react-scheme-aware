@@ -1,11 +1,24 @@
 {
   "name": "react-scheme-aware",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vladyslav-dotsenko/react-scheme-aware"
+  },
+  "homepage": "https://vladyslav-dotsenko.github.io/react-scheme-aware/",
+  "author": "Vladyslav Dotsenko",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "json",
+    "schema",
+    "validation",
+    "editor"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -22,7 +35,8 @@
     "build:lib": "vite build --config vite.config.lib.ts && tsc -p tsconfig.lib.json",
     "lint": "eslint .",
     "preview": "vite preview",
-    "release": "bash build-gh-pages.sh"
+    "deploy-demo": "bash build-gh-pages.sh",
+    "prepublishOnly": "npm run build:lib"
   },
   "dependencies": {
     "@monaco-editor/react": ">=4.0.0",

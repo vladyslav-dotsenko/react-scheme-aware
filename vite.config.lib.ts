@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 import { resolve } from 'path';
 
 export default defineConfig({
+  publicDir: false, // do not copy demo app assets (e.g. public/) into dist
   plugins: [react()],
   build: {
     lib: {
